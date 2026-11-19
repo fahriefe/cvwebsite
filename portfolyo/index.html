@@ -37,7 +37,8 @@ nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1080px
   background:rgba(18,18,20,.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:999px}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;padding:0 10px 0 14px;max-width:none}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:1px;text-decoration:none;font-size:15px}
-.brand svg{width:30px;height:30px}
+.brand.logo{display:inline-block;font-weight:700;letter-spacing:3px;font-size:16px;padding-left:10px}
+.logo span{color:var(--a1)}
 nav ul{display:flex;gap:6px;list-style:none}
 nav ul a{text-decoration:none;padding:7px 14px;border-radius:999px;font-size:14px;letter-spacing:1px;color:var(--muted);transition:.25s}
 nav ul a:hover{color:#fff;background:rgba(255,255,255,.08)}
@@ -156,19 +157,7 @@ footer{padding:0 0 48px;color:var(--muted);font-size:13px;letter-spacing:2px;tex
 <body>
 
 <nav><div class="wrap">
-  <a class="brand" href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34" aria-label="FEY logosu">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5eead4"/>
-      <stop offset=".5" stop-color="#7c9cff"/>
-      <stop offset="1" stop-color="#c084fc"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="#0b0b0b"/>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="3"/>
-  <text x="30" y="43" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="25" letter-spacing="1" fill="#f4f4f5">FEY</text>
-  <circle cx="53" cy="40" r="3.6" fill="url(#g)"/>
-</svg>Fahri Efe Yanıklar</a>
+  <a class="brand logo" href="#top">FEY<span>.</span></a>
   <ul>
     <li><a href="#katki">Neler yapabilirim</a></li>
     <li><a href="#projeler">Projeler</a></li>
